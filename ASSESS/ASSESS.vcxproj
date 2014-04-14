@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ANN\ANN.cpp" />
+    <ClCompile Include="src\ANN\brute.cpp" />
+    <ClCompile Include="src\ANN\checkActiveClass.cpp" />
+    <ClCompile Include="src\ANN\checkActiveClass1.cpp" />
+    <ClCompile Include="src\ANN\checkActiveClass2.cpp" />
+    <ClCompile Include="src\ANN\checkActiveClass3.cpp" />
+    <ClCompile Include="src\ANN\DisjointSets.cpp" />
+    <ClCompile Include="src\ANN\kd_dump.cpp" />
+    <ClCompile Include="src\ANN\kd_fix_rad_search.cpp" />
+    <ClCompile Include="src\ANN\kd_pr_search.cpp" />
+    <ClCompile Include="src\ANN\kd_search.cpp" />
+    <ClCompile Include="src\ANN\kd_split.cpp" />
+    <ClCompile Include="src\ANN\kd_tree.cpp" />
+    <ClCompile Include="src\ANN\kd_util.cpp" />
+    <ClCompile Include="src\ANN\perf.cpp" />
+    <ClCompile Include="src\Assess\DisjointSets.cpp" />
+    <ClCompile Include="src\Assess\ASSESS.cpp" />
+    <ClCompile Include="src\masking\globalParameters.cpp" />
+    <ClCompile Include="src\masking\masking.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ANN\ANN.h" />
+    <ClInclude Include="include\ANN\ANNperf.h" />
+    <ClInclude Include="include\ANN\ANNx.h" />
+    <ClInclude Include="include\ANN\bd_tree.h" />
+    <ClInclude Include="include\ANN\checkActiveClass.h" />
+    <ClInclude Include="include\ANN\checkActiveClass1.h" />
+    <ClInclude Include="include\ANN\checkActiveClass2.h" />
+    <ClInclude Include="include\ANN\checkActiveClass3.h" />
+    <ClInclude Include="include\ANN\DisjointSets.h" />
+    <ClInclude Include="include\ANN\Header.h" />
+    <ClInclude Include="include\ANN\kd_fix_rad_search.h" />
+    <ClInclude Include="include\ANN\kd_pr_search.h" />
+    <ClInclude Include="include\ANN\kd_search.h" />
+    <ClInclude Include="include\ANN\kd_split.h" />
+    <ClInclude Include="include\ANN\kd_tree.h" />
+    <ClInclude Include="include\ANN\kd_util.h" />
+    <ClInclude Include="include\ANN\pr_queue.h" />
+    <ClInclude Include="include\ANN\pr_queue_k.h" />
+    <ClInclude Include="include\Assess\DisjointSets.h" />
+    <ClInclude Include="include\Assess\ASSESS.h" />
+    <ClInclude Include="include\masking\globalParameters.h" />
+    <ClInclude Include="include\masking\masking.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B6418BD-E786-495E-9ED3-A94247C337EB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NPN</RootNamespace>
+    <ProjectName>Assess</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\Windows\x86\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\</IntDir>
+    <IncludePath>$(MSBuildProjectDirectory)\include\masking;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(MSBuildProjectDirectory)\include;$(MSBuildProjectDirectory)\include\ASSESS;$(MSBuildProjectDirectory)\include\ANN;$(IncludePath);C:\boost\include</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\lib;$(LibraryPath);c:\boost\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(MSBuildProjectDirectory)\include;$(MSBuildProjectDirectory\include\ASSESS;$(MSBuildProjectDirectory)\include\ANN;$(MSBuildProjectDirectory)\include\Utility;$(IncludePath);C:\boost\include</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;$(MSBuildProjectDirectory)\lib;$(LibraryPath);c:\boost\lib</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\Windows\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\Windows\x64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(MSBuildProjectDirectory)\include\masking;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(MSBuildProjectDirectory)\include;$(MSBuildProjectDirectory)\include\ASSESS;$(MSBuildProjectDirectory)\include\ANN;$(IncludePath);C:\boost\include</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;$(MSBuildProjectDirectory)\lib;$(LibraryPath);c:\boost\lib</LibraryPath>
+    <IntDir>$(SolutionDir)temp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(MSBuildProjectDirectory)\include;$(MSBuildProjectDirectory)\include\ASSESS;$(MSBuildProjectDirectory)\include\ANN;$(MSBuildProjectDirectory)\include\Masking;$(IncludePath);C:\boost\include</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;$(MSBuildProjectDirectory)\lib;$(LibraryPath);c:\boost\lib</LibraryPath>
+    <OutDir>$(SolutionDir)bin\Windows\x64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)temp\Windows\x64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
